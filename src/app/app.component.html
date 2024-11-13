@@ -156,5 +156,24 @@
       </ui-avatar>
     </div>
   </div>
+
+  <div class="w-full flfex flex-col items-start gap-5">
+    <h1 class="text-2xl font-bold">Dialog Example</h1>
+    <div class="flex flex-wrap items-center mt-5">
+      <ui-dialog-trigger (openDialog)="toggleDialog()"></ui-dialog-trigger>
+
+      <ui-dialog [(isOpen)]="isDialogOpen">
+        <ui-dialog-header> Dialog Title </ui-dialog-header>
+
+        <ui-dialog-content>
+          <p>Dialog Content</p>
+        </ui-dialog-content>
+
+        <ui-dialog-footer>
+          <ui-button variant="outline" (click)="closeDialog()">Close</ui-button>
+        </ui-dialog-footer>
+      </ui-dialog>
+    </div>
+  </div>
 </div>
 <router-outlet />

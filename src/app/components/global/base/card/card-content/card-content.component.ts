@@ -1,4 +1,9 @@
-import { Component, Input, HostBinding, ViewEncapsulation } from '@angular/core';
+import {
+  Component,
+  Input,
+  HostBinding,
+  ViewEncapsulation,
+} from '@angular/core';
 
 @Component({
   selector: 'ui-card-content',

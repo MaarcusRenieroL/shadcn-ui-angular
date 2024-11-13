@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 type ButtonVariant =
   | 'default'
@@ -17,6 +17,13 @@ export class ButtonComponent {
   @Input() variant: ButtonVariant = 'default';
   @Input() size: ButtonSize = 'default';
   @Input() isDisabled: boolean = false;
+  @Output() buttonClick = new EventEmitter<void>();
+
+  onClick(): void {
+    if (!this.isDisabled) {
+      this.buttonClick.emit();
+    }
+  }
 
   get buttonClasses(): string[] {
     const baseClasses = [

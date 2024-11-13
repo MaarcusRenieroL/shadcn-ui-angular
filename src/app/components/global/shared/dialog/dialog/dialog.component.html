@@ -1,0 +1,6 @@
+<div *ngIf="isOpen" class="fixed inset-0 z-50 flex items-center justify-center">
+  <ui-dialog-overlay (click)="isOpen = false"></ui-dialog-overlay>
+  <ui-dialog-content (closeDialog)="isOpen = false">
+    <ng-content></ng-content>
+  </ui-dialog-content>
+</div>

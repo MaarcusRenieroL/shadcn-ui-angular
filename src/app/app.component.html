@@ -138,5 +138,18 @@
       <ui-badge variant="outline">Outline Badge</ui-badge>
     </div>
   </div>
+
+  <div class="w-full flex flex-col items-start gap-5">
+    <h1 class="text-2xl font-bold">All Avatar Examples</h1>
+    <div class="flex flex-wrap items-center gap-5">
+      <ui-avatar className="border-2 border-gray-300">
+        <ui-avatar-image [src]="imageSrc"></ui-avatar-image>
+        <ui-avatar-fallback text="A"></ui-avatar-fallback>
+      </ui-avatar>
+      <ui-avatar>
+        <ui-avatar-fallback text="B"></ui-avatar-fallback>
+      </ui-avatar>
+    </div>
+  </div>
 </div>
 <router-outlet />

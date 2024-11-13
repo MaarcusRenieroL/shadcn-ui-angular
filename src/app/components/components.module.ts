@@ -10,10 +10,14 @@ import { CardHeaderComponent } from './global/card/card-header/card-header.compo
 import { CardTitleComponent } from './global/card/card-title/card-title.component';
 import { InputComponent } from './global/input/input.component';
 import { BadgeComponent } from './global/badge/badge.component';
+import { AvatarModule } from './global/avatar/avatar.module';
+import { AvatarComponent } from './global/avatar/avatar/avatar.component';
+import { AvatarFallbackComponent } from './global/avatar/avatar-fallback/avatar-fallback.component';
+import { AvatarImageComponent } from './global/avatar/avatar-image/avatar-image.component';
 
 @NgModule({
   declarations: [ButtonComponent, InputComponent, BadgeComponent],
-  imports: [CommonModule, CardModule],
+  imports: [CommonModule, CardModule, AvatarModule],
   exports: [
     ButtonComponent,
     CardComponent,
@@ -23,7 +27,10 @@ import { BadgeComponent } from './global/badge/badge.component';
     CardHeaderComponent,
     CardTitleComponent,
     InputComponent,
-    BadgeComponent
+    BadgeComponent,
+    AvatarComponent,
+    AvatarFallbackComponent,
+    AvatarImageComponent
   ],
 })
 export class ComponentsModule {}

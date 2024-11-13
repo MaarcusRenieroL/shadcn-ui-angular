@@ -157,7 +157,7 @@
     </div>
   </div>
 
-  <div class="w-full flfex flex-col items-start gap-5">
+  <div class="w-full flfex flex-col items-start">
     <h1 class="text-2xl font-bold">Dialog Example</h1>
     <div class="flex flex-wrap items-center mt-5">
       <ui-dialog-trigger (openDialog)="toggleDialog()"></ui-dialog-trigger>
@@ -173,6 +173,39 @@
           <ui-button variant="outline" (click)="closeDialog()">Close</ui-button>
         </ui-dialog-footer>
       </ui-dialog>
+    </div>
+  </div>
+
+  <div class="w-full flex flex-col items-start">
+    <h1 class="text-2xl font-bold">Breadcrumb Example</h1>
+    <div class="flex flex-wrap items-center mt-5">
+      <ui-breadcrumb>
+        <ui-breadcrumb-list>
+          <ui-breadcrumb-item>
+            <ui-breadcrumb-link href="/">Home</ui-breadcrumb-link>
+          </ui-breadcrumb-item>
+
+          <ui-breadcrumb-separator></ui-breadcrumb-separator>
+
+          <ui-breadcrumb-item>
+            <ui-breadcrumb-ellipsis class="h-4 w-4"></ui-breadcrumb-ellipsis>
+          </ui-breadcrumb-item>
+
+          <ui-breadcrumb-separator></ui-breadcrumb-separator>
+
+          <ui-breadcrumb-item>
+            <ui-breadcrumb-link href="/docs/components"
+              >Components</ui-breadcrumb-link
+            >
+          </ui-breadcrumb-item>
+
+          <ui-breadcrumb-separator></ui-breadcrumb-separator>
+
+          <ui-breadcrumb-item>
+            <ui-breadcrumb-page>Breadcrumb</ui-breadcrumb-page>
+          </ui-breadcrumb-item>
+        </ui-breadcrumb-list>
+      </ui-breadcrumb>
     </div>
   </div>
 </div>

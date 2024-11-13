@@ -38,6 +38,9 @@ importers:
       '@ng-icons/heroicons':
         specifier: ^29.9.0
         version: 29.9.0
+      '@ng-icons/material-icons':
+        specifier: ^29.9.0
+        version: 29.9.0
       rxjs:
         specifier: ~7.8.0
         version: 7.8.1
@@ -1350,6 +1353,9 @@ packages:
 
   '@ng-icons/heroicons@29.9.0':
     resolution: {integrity: sha512-PaVYgujrrOwQ/lUErihgrJ/sPV9vAx9H5+VZyqj8PdUOc5TS8nd9iMdQ3X+00XPTlxkrKsGcBaxiQZ++nXyhZg==}
+
+  '@ng-icons/material-icons@29.9.0':
+    resolution: {integrity: sha512-4nabvHNI0M0vmbTR3+R/I4q7XLAX8ujlVzeNS6n6bQi4xRZTLqqTscBhlReSbZ2CWCT13NVsTCbJVkNK1pmXSw==}
 
   '@ngtools/webpack@18.2.11':
     resolution: {integrity: sha512-iTdUGJ5O7yMm1DyCzyoMDMxBJ68emUSSXPWbQzEEdcqmtifRebn+VAq4vHN8OmtGM1mtuKeLEsbiZP8ywrw7Ug==}
@@ -5821,6 +5827,10 @@ snapshots:
       tslib: 2.8.1
 
   '@ng-icons/heroicons@29.9.0':
+    dependencies:
+      tslib: 2.8.1
+
+  '@ng-icons/material-icons@29.9.0':
     dependencies:
       tslib: 2.8.1
 

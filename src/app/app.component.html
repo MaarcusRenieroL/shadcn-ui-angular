@@ -58,16 +58,12 @@
           <div class="space-y-2">
             <div>
               <label class="block text-sm font-medium">Card Number</label>
-              <ui-input
-                type="text"
-              />
+              <ui-input type="text" />
             </div>
             <div class="flex space-x-2">
               <div class="w-1/2">
                 <label class="block text-sm font-medium">Expiry Date</label>
-                <ui-input
-                  type="text"
-                />
+                <ui-input type="text" />
               </div>
               <div class="w-1/2">
                 <label class="block text-sm font-medium">CVV</label>
@@ -130,6 +126,16 @@
       <ui-input type="email" placeholder="Enter your email" />
       <ui-input type="password" placeholder="Enter your password" />
       <ui-input [disabled]="true" placeholder="Disabled input" />
+    </div>
+  </div>
+
+  <div class="w-full flex flex-col items-start gap-5">
+    <h1 class="text-2xl font-bold">All Badge Variants</h1>
+    <div class="flex flex-wrap items-center gap-5">
+      <ui-badge>Default Badge</ui-badge>
+      <ui-badge variant="secondary">Secondary Badge</ui-badge>
+      <ui-badge variant="destructive">Destructive Badge</ui-badge>
+      <ui-badge variant="outline">Outline Badge</ui-badge>
     </div>
   </div>
 </div>

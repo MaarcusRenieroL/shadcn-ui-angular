@@ -9,9 +9,10 @@ import { CardFooterComponent } from './global/card/card-footer/card-footer.compo
 import { CardHeaderComponent } from './global/card/card-header/card-header.component';
 import { CardTitleComponent } from './global/card/card-title/card-title.component';
 import { InputComponent } from './global/input/input.component';
+import { BadgeComponent } from './global/badge/badge.component';
 
 @NgModule({
-  declarations: [ButtonComponent, InputComponent],
+  declarations: [ButtonComponent, InputComponent, BadgeComponent],
   imports: [CommonModule, CardModule],
   exports: [
     ButtonComponent,
@@ -21,7 +22,8 @@ import { InputComponent } from './global/input/input.component';
     CardFooterComponent,
     CardHeaderComponent,
     CardTitleComponent,
-    InputComponent
+    InputComponent,
+    BadgeComponent
   ],
 })
 export class ComponentsModule {}

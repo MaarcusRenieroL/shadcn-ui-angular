@@ -14,7 +14,7 @@
       <ui-button variant="secondary">Secondary</ui-button>
       <ui-button variant="ghost">Ghost</ui-button>
       <ui-button variant="link">Link</ui-button>
-    
+
       <ui-button size="sm">Small</ui-button>
       <ui-button size="default">Default</ui-button>
       <ui-button size="lg">Large</ui-button>
@@ -36,16 +36,16 @@
           <form class="space-y-2">
             <div>
               <label class="block text-sm font-medium">Email</label>
-              <input type="email" class="mt-1 block w-full border rounded px-2 py-1" />
+              <ui-input />
             </div>
             <div>
               <label class="block text-sm font-medium">Password</label>
-              <input type="password" class="mt-1 block w-full border rounded px-2 py-1" />
+              <ui-input type="password" />
             </div>
           </form>
         </ui-card-content>
         <ui-card-footer class="pt-2">
-          <ui-button >Submit</ui-button>
+          <ui-button>Submit</ui-button>
         </ui-card-footer>
       </ui-card>
 
@@ -58,22 +58,29 @@
           <div class="space-y-2">
             <div>
               <label class="block text-sm font-medium">Card Number</label>
-              <input type="text" class="mt-1 block w-full border rounded px-2 py-1" />
+              <ui-input
+                type="text"
+              />
             </div>
             <div class="flex space-x-2">
               <div class="w-1/2">
                 <label class="block text-sm font-medium">Expiry Date</label>
-                <input type="text" class="mt-1 block w-full border rounded px-2 py-1" />
+                <ui-input
+                  type="text"
+                />
               </div>
               <div class="w-1/2">
                 <label class="block text-sm font-medium">CVV</label>
-                <input type="text" class="mt-1 block w-full border rounded px-2 py-1" />
+                <ui-input
+                  type="text"
+                  class="mt-1 block w-full border rounded px-2 py-1"
+                />
               </div>
             </div>
           </div>
         </ui-card-content>
         <ui-card-footer class="pt-2">
-          <ui-button >Pay Now</ui-button>
+          <ui-button>Pay Now</ui-button>
         </ui-card-footer>
       </ui-card>
 
@@ -83,28 +90,46 @@
         </ui-card-header>
         <ui-card-content class="flex-1 overflow-y-auto space-y-2">
           <div class="flex items-start space-x-1">
-            <div class="bg-gray-200 p-1 rounded">Hello! How can I help you today?</div>
+            <div class="bg-gray-200 p-1 rounded">
+              Hello! How can I help you today?
+            </div>
           </div>
           <div class="flex items-start space-x-1 justify-end">
-            <div class="bg-primary text-white p-1 rounded">I need some help with my account.</div>
+            <div class="bg-primary text-white p-1 rounded">
+              I need some help with my account.
+            </div>
           </div>
-          <!-- Additional messages for scrollable effect -->
           <div class="flex items-start space-x-1">
-            <div class="bg-gray-200 p-1 rounded">Sure! Please provide more details.</div>
+            <div class="bg-gray-200 p-1 rounded">
+              Sure! Please provide more details.
+            </div>
           </div>
           <div class="flex items-start space-x-1 justify-end">
-            <div class="bg-primary text-white p-1 rounded">I can’t log in.</div>
+            <div class="bg-primary text-white p-1 rounded">
+              I can&apos;t log in.
+            </div>
           </div>
           <div class="flex items-start space-x-1">
-            <div class="bg-gray-200 p-1 rounded">Let me check your account.</div>
+            <div class="bg-gray-200 p-1 rounded">
+              Let me check your account.
+            </div>
           </div>
         </ui-card-content>
-        <ui-card-footer class="flex gap-5">
-          <input type="text" placeholder="Type your message..." class="flex-1 border rounded px-2 py-1" />
+        <ui-card-footer class="flex items-center w-full gap-5">
+          <ui-input type="text" placeholder="Type your message..." />
           <ui-button>Send</ui-button>
         </ui-card-footer>
       </ui-card>
+    </div>
+  </div>
 
+  <div class="w-full flex flex-col items-start gap-5">
+    <h1 class="text-2xl font-bold">All Button Variants</h1>
+    <div class="flex flex-wrap items-center gap-5">
+      <ui-input placeholder="Enter text" />
+      <ui-input type="email" placeholder="Enter your email" />
+      <ui-input type="password" placeholder="Enter your password" />
+      <ui-input [disabled]="true" placeholder="Disabled input" />
     </div>
   </div>
 </div>

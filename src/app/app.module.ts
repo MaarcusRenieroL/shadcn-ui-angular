@@ -9,16 +9,14 @@ import { AppComponent } from './app.component';
 import { ComponentsModule } from './components/components.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     NgIconsModule.withIcons({ heroUsers }),
     AppRoutingModule,
-    ComponentsModule
+    ComponentsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

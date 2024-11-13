@@ -67,10 +67,7 @@
               </div>
               <div class="w-1/2">
                 <label class="block text-sm font-medium">CVV</label>
-                <ui-input
-                  type="text"
-                  class="mt-1 block w-full border rounded px-2 py-1"
-                />
+                <ui-input type="text" />
               </div>
             </div>
           </div>
@@ -84,35 +81,43 @@
         <ui-card-header>
           <ui-card-title>Chat</ui-card-title>
         </ui-card-header>
-        <ui-card-content class="flex-1 overflow-y-auto space-y-2">
+        <ui-card-content class="flex-1 overflow-y-auto space-y-5">
           <div class="flex items-start space-x-1">
-            <div class="bg-gray-200 p-1 rounded">
+            <div class="bg-gray-200 px-4 py-2 rounded-t-full rounded-br-full">
               Hello! How can I help you today?
             </div>
           </div>
           <div class="flex items-start space-x-1 justify-end">
-            <div class="bg-primary text-white p-1 rounded">
+            <div
+              class="bg-primary text-white px-4 py-2 rounded-t-full rounded-br-full"
+            >
               I need some help with my account.
             </div>
           </div>
           <div class="flex items-start space-x-1">
-            <div class="bg-gray-200 p-1 rounded">
+            <div class="bg-gray-200 px-4 py-2 rounded-t-full rounded-bl-full">
               Sure! Please provide more details.
             </div>
           </div>
           <div class="flex items-start space-x-1 justify-end">
-            <div class="bg-primary text-white p-1 rounded">
+            <div
+              class="bg-primary text-white px-4 py-2 rounded-t-full rounded-br-full"
+            >
               I can&apos;t log in.
             </div>
           </div>
           <div class="flex items-start space-x-1">
-            <div class="bg-gray-200 p-1 rounded">
+            <div class="bg-gray-200 px-4 py-2 rounded-t-full rounded-bl-full">
               Let me check your account.
             </div>
           </div>
         </ui-card-content>
         <ui-card-footer class="flex items-center w-full gap-5">
-          <ui-input type="text" placeholder="Type your message..." />
+          <ui-input
+            type="text"
+            placeholder="Type your message..."
+            class="w-full"
+          />
           <ui-button>Send</ui-button>
         </ui-card-footer>
       </ui-card>

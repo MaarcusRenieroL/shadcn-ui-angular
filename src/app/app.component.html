@@ -22,7 +22,90 @@
         <ng-icon name="heroUsers" class="text-white"></ng-icon>
       </ui-button>
     </div>
-    
+  </div>
+
+  <div class="w-full flex flex-col items-start gap-5">
+    <h1 class="text-2xl font-bold">All Card Examples</h1>
+    <div class="grid grid-cols-3 gap-5">
+      <ui-card class="w-full max-w-md h-fit">
+        <ui-card-header>
+          <ui-card-title>Sign Up</ui-card-title>
+          <ui-card-description>Fill in your details</ui-card-description>
+        </ui-card-header>
+        <ui-card-content>
+          <form class="space-y-2">
+            <div>
+              <label class="block text-sm font-medium">Email</label>
+              <input type="email" class="mt-1 block w-full border rounded px-2 py-1" />
+            </div>
+            <div>
+              <label class="block text-sm font-medium">Password</label>
+              <input type="password" class="mt-1 block w-full border rounded px-2 py-1" />
+            </div>
+          </form>
+        </ui-card-content>
+        <ui-card-footer class="pt-2">
+          <ui-button >Submit</ui-button>
+        </ui-card-footer>
+      </ui-card>
+
+      <ui-card class="w-full max-w-md h-fit">
+        <ui-card-header>
+          <ui-card-title>Payment</ui-card-title>
+          <ui-card-description>Enter payment details</ui-card-description>
+        </ui-card-header>
+        <ui-card-content>
+          <div class="space-y-2">
+            <div>
+              <label class="block text-sm font-medium">Card Number</label>
+              <input type="text" class="mt-1 block w-full border rounded px-2 py-1" />
+            </div>
+            <div class="flex space-x-2">
+              <div class="w-1/2">
+                <label class="block text-sm font-medium">Expiry Date</label>
+                <input type="text" class="mt-1 block w-full border rounded px-2 py-1" />
+              </div>
+              <div class="w-1/2">
+                <label class="block text-sm font-medium">CVV</label>
+                <input type="text" class="mt-1 block w-full border rounded px-2 py-1" />
+              </div>
+            </div>
+          </div>
+        </ui-card-content>
+        <ui-card-footer class="pt-2">
+          <ui-button >Pay Now</ui-button>
+        </ui-card-footer>
+      </ui-card>
+
+      <ui-card class="w-full max-w-md h-fit flex flex-col">
+        <ui-card-header>
+          <ui-card-title>Chat</ui-card-title>
+        </ui-card-header>
+        <ui-card-content class="flex-1 overflow-y-auto space-y-2">
+          <div class="flex items-start space-x-1">
+            <div class="bg-gray-200 p-1 rounded">Hello! How can I help you today?</div>
+          </div>
+          <div class="flex items-start space-x-1 justify-end">
+            <div class="bg-primary text-white p-1 rounded">I need some help with my account.</div>
+          </div>
+          <!-- Additional messages for scrollable effect -->
+          <div class="flex items-start space-x-1">
+            <div class="bg-gray-200 p-1 rounded">Sure! Please provide more details.</div>
+          </div>
+          <div class="flex items-start space-x-1 justify-end">
+            <div class="bg-primary text-white p-1 rounded">I can’t log in.</div>
+          </div>
+          <div class="flex items-start space-x-1">
+            <div class="bg-gray-200 p-1 rounded">Let me check your account.</div>
+          </div>
+        </ui-card-content>
+        <ui-card-footer class="flex gap-5">
+          <input type="text" placeholder="Type your message..." class="flex-1 border rounded px-2 py-1" />
+          <ui-button>Send</ui-button>
+        </ui-card-footer>
+      </ui-card>
+
+    </div>
   </div>
 </div>
 <router-outlet />

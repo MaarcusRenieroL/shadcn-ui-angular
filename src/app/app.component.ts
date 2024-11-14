@@ -23,4 +23,7 @@ export class AppComponent {
   toggleDialog() {
     this.isDialogOpen = !this.isDialogOpen;
   }
+
+  isOpen = false;
+  isSubOpen = false;
 }

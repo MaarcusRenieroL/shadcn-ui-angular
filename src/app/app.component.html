@@ -208,5 +208,32 @@
       </ui-breadcrumb>
     </div>
   </div>
+
+  <div class="w-full flex flex-col items-start gap-5">
+    <h1 class="text-2xl font-bold">Dropdown Examples</h1>
+    <div class="w-full flex flex-wrap gap-5">
+      <ui-dropdown-menu>
+        <ui-dropdown-menu-trigger (click)="isOpen = !isOpen">Options</ui-dropdown-menu-trigger>
+        
+        <ui-dropdown-menu-content [isOpen]="isOpen">
+          <ui-dropdown-menu-item>Item 1</ui-dropdown-menu-item>
+          
+          <ui-dropdown-menu-checkbox-item [checked]="true">Checkbox Item</ui-dropdown-menu-checkbox-item>
+          
+          <ui-dropdown-menu-radio-item [selected]="false">Radio Item</ui-dropdown-menu-radio-item>
+          
+          <ui-dropdown-menu-separator></ui-dropdown-menu-separator>
+          
+          <ui-dropdown-sub>
+            <ui-dropdown-menu-sub-trigger (click)="isSubOpen = !isSubOpen">Submenu</ui-dropdown-menu-sub-trigger>
+            
+            <ui-dropdown-menu-sub-content [isOpen]="isSubOpen">
+              <ui-dropdown-menu-item>Sub Item 1</ui-dropdown-menu-item>
+            </ui-dropdown-menu-sub-content>
+          </ui-dropdown-sub>
+        </ui-dropdown-menu-content>
+      </ui-dropdown-menu>
+    </div>
+  </div>
 </div>
 <router-outlet />
